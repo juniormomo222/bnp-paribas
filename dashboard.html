@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+    }
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #004835;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+    }
+    .sidebar img {
+      display: block;
+      max-width: 150px;
+      height: auto;
+      margin: 0 auto 40px auto;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+    .main {
+      margin-left: 250px;
+      padding: 40px;
+    }
+    .solde-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .solde-amount {
+      font-size: 2.5rem;
+      color: #008e4d;
+    }
+    .user-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .virement-btn {
+      margin-top: 20px;
+    }
+    .marquee {
+      background-color: #d1e7dd;
+      color: #0f5132;
+      padding: 10px;
+      font-weight: 500;
+    }
+    .history {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Message défilant -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">✅ Your account has been successfully reactivated following the verification process. Transfers and account services are now fully operational. Thank you for your trust.</marquee>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column">
+    <img src="assets/bnp-removebg-preview.png" alt="BNP Logo" />
+    <a href="dashboard.html"> Home</a>
+    <a href="virement.html">Make a transfer</a>
+    <a href="index.html">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="user-name">Welcome, KARLSSON ROLF HENRIK</div>
+
+    <!-- Solde et bouton -->
+    <div class="solde-card">
+      <h5 class="text-muted">Current Account Balance</h5>
+      <div class="solde-amount">€7,430,000.00</div>
+      <a href="virement.html" class="btn btn-success virement-btn">Make a transfer</a>
+    </div>
+
+    <!-- Historique vide -->
+    <div class="history mt-4">
+      <h5 class="text-muted">Transaction History</h5>
+      <p class="text-secondary">No transaction available yet. Your account has just been reactivated.</p>
+    </div>
+  </div>
+
+</body>
+</html>

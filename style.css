@@ -1,0 +1,23 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header img {
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.btn-success {
+  background-color: #008e4d;
+  border-color: #008e4d;
+}
+
+.btn-success:hover {
+  background-color: #006c3b;
+  border-color: #006c3b;
+}
